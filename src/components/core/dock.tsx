@@ -1,11 +1,11 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
+import { motion, MotionValue, useMotionValue, useSpring, useTransform } from "motion/react";
 import React, { useContext, useRef, useEffect, useCallback } from "react";
 import { BorderBeam } from "@/registry/magicui/border-beam";
 
 interface DockContextValue {
-  pointerX: motion.MotionValue<number>;
+  pointerX: MotionValue<number>;
 }
 
 const DockContext = React.createContext<DockContextValue | null>(null);
